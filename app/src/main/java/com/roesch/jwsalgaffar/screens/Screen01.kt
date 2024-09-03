@@ -23,12 +23,15 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
+import com.roesch.jwsalgaffar.R
 import com.roesch.jwsalgaffar.components.DynamicSelectTextField
 import com.roesch.jwsalgaffar.components.JudulInfo
+import com.roesch.jwsalgaffar.components.TombolHome
 import com.roesch.jwsalgaffar.components.TombolIcon
 import com.roesch.jwsalgaffar.components.TombolKirim
 import com.roesch.jwsalgaffar.components.listType
@@ -123,11 +126,9 @@ fun Screen01(navController: NavHostController, bluetoothSocket: BluetoothSocket)
                     TombolKirim()
                 }
                 Spacer(Modifier.height(20.dp))
-                TombolIcon(
+                TombolHome(
                     "MENU UTAMA",
-                    Icons.Default.Home,
-                    navController,
-                    "Home"
+                    navController
                 )
             }
 

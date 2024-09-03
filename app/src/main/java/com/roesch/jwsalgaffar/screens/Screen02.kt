@@ -29,6 +29,7 @@ import com.google.android.gms.maps.model.LatLng
 import com.roesch.jwsalgaffar.components.DynamicSelectTextField
 import com.roesch.jwsalgaffar.components.DynamicSelectTextFieldSufix2
 import com.roesch.jwsalgaffar.components.JudulInfo
+import com.roesch.jwsalgaffar.components.TombolHome
 import com.roesch.jwsalgaffar.components.TombolIcon
 import com.roesch.jwsalgaffar.components.TombolKirim
 import com.roesch.jwsalgaffar.components.listBilanganBulat
@@ -174,11 +175,9 @@ fun Screen02(
                         TombolKirim()
                     }
                     Spacer(Modifier.height(20.dp))
-                    TombolIcon(
+                    TombolHome(
                         "MENU UTAMA",
-                        Icons.Default.Home,
-                        navController,
-                        "Home"
+                        navController
                     )
                 }
 

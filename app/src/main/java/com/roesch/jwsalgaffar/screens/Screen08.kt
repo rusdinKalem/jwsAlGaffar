@@ -35,6 +35,7 @@ import com.roesch.jwsalgaffar.components.DynamicSelectTextField
 import com.roesch.jwsalgaffar.components.DynamicSelectTextFieldSufix2
 import com.roesch.jwsalgaffar.components.JudulInfo
 import com.roesch.jwsalgaffar.components.TextSwitch
+import com.roesch.jwsalgaffar.components.TombolHome
 import com.roesch.jwsalgaffar.components.TombolIcon
 import com.roesch.jwsalgaffar.components.TombolKirim
 import com.roesch.jwsalgaffar.components.listMode
@@ -325,11 +326,9 @@ fun Screen08(navController: NavHostController, bluetoothSocket: BluetoothSocket)
                     TombolKirim()
                 }
                 Spacer(Modifier.height(20.dp))
-                TombolIcon(
+                TombolHome(
                     "MENU UTAMA",
-                    Icons.Default.Home,
-                    navController,
-                    "Home"
+                    navController
                 )
             }
 

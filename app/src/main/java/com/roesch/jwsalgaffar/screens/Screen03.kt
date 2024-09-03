@@ -30,6 +30,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import com.roesch.jwsalgaffar.components.JudulInfo
 import com.roesch.jwsalgaffar.components.Picker
+import com.roesch.jwsalgaffar.components.TombolHome
 import com.roesch.jwsalgaffar.components.TombolIcon
 import java.io.OutputStream
 import java.text.SimpleDateFormat
@@ -109,8 +110,8 @@ fun Screen03(navController: NavHostController, bluetoothSocket: BluetoothSocket)
 
                     Spacer(modifier = Modifier.height(50.dp))
 
-                    TombolIcon(
-                        "MENU UTAMA", Icons.Filled.Home, navController, nav = "Home")
+                    TombolHome(
+                        "MENU UTAMA", navController)
                 }
             }
 

@@ -44,6 +44,20 @@ fun listMode (): List<String> {
         "PADAM"
     )
 }
+fun listTriger (): List<String> {
+    return listOf(
+        "praSBH",
+        "posSBH",
+        "praDHR",
+        "posDHR",
+        "praASR",
+        "posASR",
+        "praMGR",
+        "posMGR",
+        "praISY",
+        "posISY",
+    )
+}
 fun listWaktuMalam (): List<String> {
     return listOf(
         "8", "9", "10", "11", "12"
@@ -52,5 +66,10 @@ fun listWaktuMalam (): List<String> {
 fun listWaktuPagi (): List<String> {
     return listOf(
         "1", "2", "3", "4", "5"
+    )
+}
+fun listStep (): List<String> {
+    return listOf(
+        "0", "5", "10", "15", "20", "25", "30", "45", "50", "55", "60", "65", "70", "75", "80", "85", "90", "95", "100", "105", "110"
     )
 }

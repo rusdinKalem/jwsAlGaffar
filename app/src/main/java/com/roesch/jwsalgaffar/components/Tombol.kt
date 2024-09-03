@@ -19,10 +19,12 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import com.roesch.jwsalgaffar.R
 
 @Composable
 fun TombolIcon (name: String?, icon: ImageVector, navController: NavController, nav : String) {
@@ -32,7 +34,7 @@ fun TombolIcon (name: String?, icon: ImageVector, navController: NavController, 
             .clickable(
                 onClick = { navController.navigate(nav) }
             )
-            .fillMaxWidth(0.5f)
+            .fillMaxWidth(0.6f)
             .padding(horizontal = 5.dp)
             .background(color = Color.LightGray, shape = RoundedCornerShape(10.dp))
             .border(
@@ -59,12 +61,47 @@ fun TombolIcon (name: String?, icon: ImageVector, navController: NavController, 
         )
     }
 }
+@Composable
+fun TombolHome (name: String?, navController: NavController) {
+
+    Row (
+        modifier = Modifier
+            .clickable(
+                onClick = { navController.navigate("Home") }
+            )
+            .fillMaxWidth(0.6f)
+            .padding(horizontal = 5.dp)
+            .background(color = Color.LightGray, shape = RoundedCornerShape(10.dp))
+            .border(
+                width = 1.dp,
+                shape = RoundedCornerShape(10.dp),
+                color = Color(0xff1b1b1b)
+            )
+            .padding(horizontal = 5.dp)
+            .height(50.dp)
+        ,
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.SpaceBetween
+    ) {
+        Text(
+            text = name.toString(),
+            fontSize = 18.sp,
+            fontWeight = FontWeight.SemiBold,
+            modifier = Modifier.padding(horizontal = 15.dp)
+        )
+        Icon(
+            painter = painterResource(id = R.drawable.baseline_add_to_home_screen_24),
+            contentDescription = "Date",
+            Modifier.size(40.dp)
+        )
+    }
+}
 
 @Composable
 fun TombolKirim() {
     Row (
         modifier = Modifier
-            .fillMaxWidth(0.5f)
+            .fillMaxWidth(0.6f)
             .padding(horizontal = 5.dp)
             .background(color = Color.LightGray, shape = RoundedCornerShape(10.dp))
             .border(
@@ -85,7 +122,7 @@ fun TombolKirim() {
             modifier = Modifier.padding(horizontal = 15.dp)
         )
         Icon(
-            imageVector = Icons.Default.Email,
+            painter = painterResource(id= R.drawable.baseline_send_24),
             contentDescription = "Date",
             Modifier.size(40.dp)
         )

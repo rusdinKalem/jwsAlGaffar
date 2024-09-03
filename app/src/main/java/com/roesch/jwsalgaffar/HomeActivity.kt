@@ -44,6 +44,7 @@ import com.roesch.jwsalgaffar.screens.Screen05
 import com.roesch.jwsalgaffar.screens.Screen06
 import com.roesch.jwsalgaffar.screens.Screen07
 import com.roesch.jwsalgaffar.screens.Screen08
+import com.roesch.jwsalgaffar.screens.Screen09
 import com.roesch.jwsalgaffar.ui.theme.JWSAlGaffarTheme
 import com.roesch.jwsalgaffar.utils.BluetoothHandler
 
@@ -191,6 +192,9 @@ fun Nav(modifier: Modifier, bluetoothSocket: BluetoothSocket, currentLocation: L
         }
         composable(route="08"){
             Screen08(navController, bluetoothSocket)
+        }
+        composable(route="09"){
+            Screen09(navController, bluetoothSocket)
         }
 //        composable(route="09"){
 //            Screen09(navController)

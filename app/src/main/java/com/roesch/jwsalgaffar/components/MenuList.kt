@@ -108,6 +108,6 @@ fun SetRow3(navController: NavHostController) {
                     onClick = {navController.navigate("09")}
                 )
         )
-        { ShortCut("MANUAL", R.drawable.a9) }
+        { ShortCut("RELAY", R.drawable.relay) }
     }
 }

@@ -23,10 +23,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
+import com.roesch.jwsalgaffar.R
 import com.roesch.jwsalgaffar.components.SetRow1
 import com.roesch.jwsalgaffar.components.SetRow2
 import com.roesch.jwsalgaffar.components.SetRow3
@@ -90,9 +92,9 @@ fun HomeScreen(navController: NavHostController) {
                 ) {
                     Text(text = "KE BLUETOOTH", fontWeight = FontWeight.SemiBold,fontSize = 18.sp, modifier = Modifier.padding(horizontal = 15.dp))
                     Icon(
-                        imageVector = Icons.Default.Settings,
+                        painter = painterResource(id= R.drawable.baseline_settings_bluetooth_24),
                         contentDescription = "Date",
-                        Modifier.size(40.dp)
+                        Modifier.size(36.dp)
                     )
                 }
 

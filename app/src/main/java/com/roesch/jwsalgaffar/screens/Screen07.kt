@@ -29,6 +29,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import com.roesch.jwsalgaffar.components.JudulInfo
+import com.roesch.jwsalgaffar.components.TombolHome
 import com.roesch.jwsalgaffar.components.TombolIcon
 import com.roesch.jwsalgaffar.components.TombolKirim
 import java.io.OutputStream
@@ -257,11 +258,9 @@ fun Screen07(
                     TombolKirim()
                 }
                 Spacer(Modifier.height(20.dp))
-                TombolIcon(
+                TombolHome(
                     "MENU UTAMA",
-                    Icons.Default.Home,
-                    navController,
-                    "Home"
+                    navController
                 )
             }
 

@@ -24,6 +24,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import com.roesch.jwsalgaffar.components.DynamicSelectTextFieldSufix2
 import com.roesch.jwsalgaffar.components.JudulInfo
+import com.roesch.jwsalgaffar.components.TombolHome
 import com.roesch.jwsalgaffar.components.TombolIcon
 import com.roesch.jwsalgaffar.components.TombolKirim
 import com.roesch.jwsalgaffar.components.listBilanganBulat
@@ -161,11 +162,9 @@ fun Screen04(
                         TombolKirim()
                     }
                     Spacer(Modifier.height(20.dp))
-                    TombolIcon(
+                    TombolHome(
                         "MENU UTAMA",
-                        Icons.Default.Home,
-                        navController,
-                        "Home"
+                        navController
                     )
                 }
             }

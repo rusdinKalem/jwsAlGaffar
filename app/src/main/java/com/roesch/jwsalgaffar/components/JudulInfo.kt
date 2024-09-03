@@ -19,7 +19,7 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun JudulInfo(modifier: Modifier = Modifier, judul : String, info : String) {
     Column {
-        Spacer(modifier = Modifier.height(60.dp))
+        Spacer(modifier = Modifier.height(50.dp))
         Column(
             modifier = Modifier
                 .fillMaxWidth(),
@@ -41,7 +41,7 @@ fun JudulInfo(modifier: Modifier = Modifier, judul : String, info : String) {
         Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(20.dp),
+                .padding(horizontal = 20.dp),
         ) {
             Text(
                 text = info,

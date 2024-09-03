@@ -46,11 +46,13 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
+import com.roesch.jwsalgaffar.R
 import java.io.OutputStream
 import java.text.SimpleDateFormat
 import java.util.Calendar
@@ -218,9 +220,9 @@ fun Picker(bluetoothSocket: BluetoothSocket) {
                             fontSize = 18.sp, modifier = Modifier.padding(horizontal = 15.dp))
                     }
                     Icon(
-                        imageVector = Icons.Rounded.Notifications,
+                        painter= painterResource(id = R.drawable.a6),
                         contentDescription = "Date",
-                        Modifier.size(40.dp)
+                        Modifier.size(36.dp)
                     )
                 }
 
